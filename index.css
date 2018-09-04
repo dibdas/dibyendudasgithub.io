@@ -1,0 +1,193 @@
+:root{
+  font-size: 20px;
+}
+body{
+margin:0;
+padding:0;
+background-color: black;
+}
+
+.container{
+    display: block;  
+    margin:0.5vw;
+    flex-direction: column;
+    position: relative;
+    padding:1vh;
+}
+.header{
+  color: blue;
+  margin:0;
+  display:flex;
+  flex-wrap: wrap;
+  padding:0 35vw 5vw;
+  padding-top: 2vw;
+  flex-direction: row;
+  background-color:grey;
+  position:relative;
+  font-size: 3rem;
+  text-align: center;
+
+}
+  .row {
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: row;
+    display:flex;
+    flex-wrap:wrap;
+    
+  }
+   .paragraph{
+  color: whitesmoke;
+  font-family: "Istok Web", sans-serif;
+  width: 95vw;
+  text-transform:uppercase;
+  
+  
+}
+.row .my-image {
+  border: 1px solid pink;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px 2px #2c2c2c;
+  width:150px;
+  float :right;
+}
+  
+
+.heading {
+  color:blue;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  position:relative;
+  margin-bottom: 1px; 
+  margin-top: 1vh;
+  padding: 3vh;
+  text-align: center;
+  
+}
+.headingT{
+  color:blue;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  position:relative;
+  margin-bottom: 1px;
+  margin-top: 1vh;
+  padding: 3vh;
+  text-align: center;
+
+  }
+
+.wow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 100%;
+  max-width:100%;
+  display: flex;
+  flex-wrap:wrap;
+
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+
+    flex: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .row {
+      flex-direction: column;
+      font-size: 2rem;
+  }
+  .paragraph{
+    font-size:2rem;
+  }
+  
+  .headingT{
+    padding:5px;
+    font-size:2.3rem;
+
+  }
+
+  .row .image {
+      order: -1;
+  }
+  .row .my-image {
+      width: 60vw;
+  }
+
+}
+@media screen and (min-width:801px)and (max-width:1024px){
+  .paragraph{
+    font-size: 2rem;
+  }
+  
+  .row .image {
+    order: -1;
+}
+.row .my-image {
+    width: 60vw;
+}
+.headingT{
+  font-size:4rem;
+}
+.paragraph{
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+@media screen and (min-width:300px) and (max-width:415px){
+  .paragraph{
+    font-size: 1rem;
+    display:flex;
+    flex-wrap:wrap;
+  }  
+
+.headingT{
+  font-size:2rem;
+padding:0.1vw;
+padding-bottom: 1vh;
+font-size: 1.8rem;
+}
+.heading{
+  padding-left:0.1vw;
+}
+  .row .image {
+    order: -1;
+}
+.row .my-image {
+    width: 60vw;
+}
+  
+}
+
+/*
+.banner .card {
+    margin-top:20px;
+  border-radius: 10px;
+  display: block;
+    height:500px;
+  }
+.banner .card .heading {
+      color: grey;
+  font-family: "Playfair Display", serif;
+      font-size: 3rem;
+      position:relative;
+      margin-bottom: 1px;
+  padding: 20px;
+      border:1px wheat;
+      margin-top: 20px;
+}
+
+
+
